@@ -63,11 +63,11 @@ with tab1:
     with col1:
         st.write("")
     with col2:
-        st.image("/Users/kristalmainsah/Desktop/DSBA/qatar_2022/q_logo.webp", width= 700)
+        st.image("data/q_logo.webp", width= 700)
     with col3:
         st.write("")
     st.header("In the following tabs, you'll be able to analyze the rankings from each team following the last World Cup. Additionnaly, you'll be able to see each team's goalkeeper, defensive, midfield, and offensive scores. ")
-    st.audio("fifa_themesong.mp3")
+    st.audio("data/fifa_themesong.mp3")
     
 
 with tab2:
