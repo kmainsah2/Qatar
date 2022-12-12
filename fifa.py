@@ -12,7 +12,7 @@ st.title("2022 Qatar World Cup")
 #Real Time Dataset
 
 #Filter to Scores
-scores = pd.read_csv("qatar_2022/data/FIFA Scores.csv")
+scores = pd.read_csv("qatar_2022/data/fifa_scores.csv")
 scores['Date1'] = pd.to_datetime(scores.Date1)
 scores['month'] = scores.Date1.dt.month
 scores['year'] = scores.Date1.dt.year
