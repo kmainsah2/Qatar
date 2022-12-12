@@ -12,14 +12,14 @@ st.title("2022 Qatar World Cup")
 #Real Time Dataset
 
 #Filter to Scores
-scores = pd.read_csv("qatar_2022/data/fifa_scores.csv")
+scores = pd.read_csv("data/fifa_scores.csv")
 scores['Date1'] = pd.to_datetime(scores.Date1)
 scores['month'] = scores.Date1.dt.month
 scores['year'] = scores.Date1.dt.year
 scores = scores[scores['year']>=2018]
 
 #Filter to Rank
-fifa_data = pd.read_csv("qatar_2022/data/fifa_data.csv", usecols=['Team Name', 'Date', 'Variable Name', 'Value'])
+fifa_data = pd.read_csv("data/fifa_data.csv", usecols=['Team Name', 'Date', 'Variable Name', 'Value'])
 rank_filter = fifa_data[fifa_data["Variable Name"] == 'Rank']
 rank_filter['Date'] = pd.to_datetime(rank_filter.Date)
 rank_filter['month'] = rank_filter.Date.dt.month
